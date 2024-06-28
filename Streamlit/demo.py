@@ -10,7 +10,7 @@ st.text("I like Python and Streamlit")
 # Displaying an image with a caption
 image_path = "Image.jpg"  # Ensure the image file is in the same directory or provide the correct path
 if os.path.exists(image_path):
-    st.image(image_path, caption="Nature's View", use_column_width=True)
+    st.image('Image.jpg', caption='Natures view')
 else:
     st.error(f"Image file '{image_path}' not found.")
 
