@@ -1,23 +1,13 @@
-import streamlit as st
-import os
+import streamlit as st 
 
-# Title of the app
+
 st.title('Hello Streamlit!')
-
-# Displaying text
 st.text("I like Python and Streamlit")
 
-# Displaying an image with a caption
-image_path = "Image.jpg"  # Ensure the image file is in the same directory or provide the correct path
-if os.path.exists(image_path):
-    st.image('Image.jpg', caption='Natures view')
-else:
-    st.error(f"Image file '{image_path}' not found.")
+st.image("Image.jpg", caption='Natures view')
 
-# Button widget
-if st.button("Click Me"):
-    st.write("Button clicked!")
+st.button("Click Me")
 
-# Slider widget
 age = st.slider("How old are you?", 0, 130, 25)
-st.write("I'm ", age, " years old")
+st.write("I'm ", age, "years old")
+
